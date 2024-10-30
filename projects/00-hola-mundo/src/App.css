@@ -1,0 +1,27 @@
+.tw-followCard-btn {
+  @apply font-bold text-black rounded-full py-[6px] px-4 ml-4 border border-black bg-white transition-all duration-300 hover:opacity-80;
+}
+
+.tw-followCard-btn.is-following {
+  @apply text-white bg-transparent border-[#bbb] w-[140px];
+}
+
+.tw-followCard-text {
+  @apply block;
+}
+
+.tw-followCard-btn.is-following:hover {
+  @apply bg-[#ff000021] border-[#f00] text-[#f00];
+}
+
+.tw-followCard-btn.is-following:hover .tw-followCard-text {
+  @apply hidden;
+}
+
+.tw-followCard-btn.is-following:hover .tw-followCard--stopFollow {
+  @apply block;
+}
+
+.tw-followCard--stopFollow {
+  @apply hidden;
+}
