@@ -22,7 +22,7 @@ function App() {
     newBoard[index] = turn
     setBoard(newBoard)
 
-    const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
+    const newTurn = turn === TURNS.red ? TURNS.yellow : TURNS.red
     setTurn(newTurn)
 
     const newWinner = checkWinnerFrom(newBoard)
@@ -34,7 +34,7 @@ function App() {
   }
 
   return (
-    <mian className="board">
+    <main className="board">
       <h1 className='mb-16 text-4xl font-bold'>Connect 4</h1>
       <section className="grid grid-cols-4 gap-2">
         {
@@ -63,7 +63,7 @@ function App() {
 
       <button onClick={resetGame}>Reinciar el juego</button>
       <WinnerModal resetGame={resetGame} winner={winner} />
-    </mian>
+    </main>
   )
 }
 
