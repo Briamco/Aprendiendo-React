@@ -1,8 +1,8 @@
-/* eslint-disable react/prop-types */
+import { useFilters } from '../hooks/useFilters'
 import './Footer.css'
 
-export function Footer ({ filters }) {
-  // const { filters } = useFilters()
+export function Footer () {
+  const { filters } = useFilters()
 
   return (
     <footer className='footer'>

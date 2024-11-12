@@ -6,7 +6,7 @@
 - [x] Añade un filtro por categoría
 - [x] Añade un filtro por precio
 
-- [] Haz uso de useContext para evitar pasar props innecesarias.
+- [x] Haz uso de useContext para evitar pasar props innecesarias.
 
 2. Carrito:
 
