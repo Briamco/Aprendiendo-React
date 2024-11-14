@@ -18,7 +18,7 @@ export function Products ({ products }) {
             const isProductInCart = checkProductInCart(product)
             
             return (
-            <li key={product.key}>
+            <li key={product.id}>
               <div>
                 <strong>{product.title}</strong> - ${product.price}
               </div>
